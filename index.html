@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T-Rex Bal Koppen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="game-header">
+      <div>
+        <h1>T-Rex Kopbal</h1>
+        <p>Houd de rode bal in de lucht door te koppen. Gebruik ← → of A/D om te bewegen.</p>
+      </div>
+      <div class="scoreboard">
+        <div>Hoogste reeks: <span id="best">0</span></div>
+        <div>Huidige reeks: <span id="score">0</span></div>
+      </div>
+    </header>
+
+    <section class="canvas-wrapper">
+      <canvas id="game" width="900" height="500" aria-label="T-Rex kopbal spel"></canvas>
+    </section>
+
+    <footer class="game-footer">
+      <button id="restart">Opnieuw</button>
+      <p id="message">Klik of druk op spatie om te starten.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
